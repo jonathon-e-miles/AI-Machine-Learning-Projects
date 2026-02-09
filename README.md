@@ -1,43 +1,48 @@
-## Data Science & Machine Learning Portfolio
+# AI & Data Science Portfolio: Technical Capstones
+**Jonathon Miles** | *Purdue University Post-Graduate Program*
 
-Welcome to my project repository. This collection showcases my experience in **Deep Learning**, **Data Analytics**, and **Predictive Modeling**, using Python-based tools to solve real-world data problems.
-
-## **Repository Structure**
-
-### **1\. [Healthcare Socioeconomic Analysis](https://www.google.com/search?q=./Healthcare-Analysis)**
-
-A 4-part capstone project investigating the relationship between age, gender, and regional location on health outcomes and retirement income.
-
-* **Key Skills:** Data De-normalization, Memory Optimization, Feature Engineering (One-Hot Encoding).  
-* **Insights:** Identified a significant "longevity gap" and quantified the retirement income decline across US regions.  
-* **Files:** Session 1 (Import), Session 2 (Cleaning), Session 3 (Stats), Session 4 (Visualization & Encoding).
-
-### **2\. [Computer Vision & Deep Learning](https://www.google.com/search?q=./Deep-Learning)**
-
-Advanced modeling using Convolutional and Recurrent Neural Networks.
-
-* **Video Classification:** A hybrid InceptionV3 \+ Bidirectional GRU model to classify actions from the UCF101 dataset.  
-* **Autonomous Driving:** Analysis of Tesla Autopilot safety data and incident frequency.  
-* **Tools:** PyTorch, OpenCV, YOLO, Transfer Learning.
-
-### **3\. [Predictive Modeling & Recommendation](https://www.google.com/search?q=./Predictive-Modeling)**
-
-* **Rolling Stones Song Recommendations:** Using K-Means Clustering and PCA to group discography into musical "eras" based on audio features.  
-* **Tesla Crash Data:** Visual investigation into the frequency of autopilot-involved incidents.
+This repository contains a curated collection of AI and Machine Learning projects, ranging from safety-critical Computer Vision to high-dimensional marketing analytics. These projects demonstrate a "full-stack" approach to AI: data engineering, model architecture, training, and deployment.
 
 ---
 
-## **Tech Stack**
+## 📂 Project Directory
 
-* **Languages:** Python (Pandas, NumPy, Scikit-Learn)  
-* **Deep Learning:** PyTorch, TensorFlow, InceptionV3, GRU  
-* **Visualization:** Matplotlib, Seaborn  
-* **Tools:** Git/GitHub, Jupyter Notebooks
+### 🏎️ 1. Computer Vision & Safety
+**Project:** [Automated Driving Object Detection](./Automated_Driving_IDs.ipynb)
+* **Goal:** Detect and classify 5 vehicle classes in real-world driving environments.
+* **Tech:** YOLOv8 (Ultralytics), PyTorch, Transfer Learning.
+* **Results:** Achieved **0.431 mAP50**; implemented custom hyperparameter tuning to overcome significant class imbalance (specifically the "Bus" class).
+
+### 🎬 2. Sequential Modeling & Motion
+**Project:** [Hybrid Video Classification](./Video_Classification.ipynb)
+* **Goal:** Classify temporal actions in video sequences using a custom deep learning pipeline.
+* **Tech:** PyTorch, InceptionV3 (Feature Extraction), Bidirectional GRU, Multi-head Attention, OpenCV.
+* **Results:** Developed a robust sampling pipeline for high-dimensional video data, utilizing attention mechanisms to focus on key frames for classification accuracy.
+
+### 💳 3. Unsupervised Learning & Marketing Strategy
+**Project:** [Strategic Customer Segmentation](./Credit_Card_Strategic_Marketing.ipynb)
+* **Goal:** Group 8,900+ credit card users into behavioral personas to drive targeted marketing spend.
+* **Tech:** Scikit-Learn, K-Means Clustering, PCA (Dimensionality Reduction), Seaborn.
+* **Results:** Successfully reduced feature dimensionality through PCA and utilized the "Elbow Method" to identify 4 distinct customer personas for high-ROI campaign targeting.
+
+### 🏠 4. Deep Learning & Financial Risk
+**Project:** [Home Lending Neural Network](./Home_Lending_Data_Analysis.ipynb)
+* **Goal:** Predict loan default risk using large-scale tabular data (300,000+ records).
+* **Tech:** TensorFlow, Keras, MLP (Multi-Layer Perceptron), AdamW.
+* **Results:** Optimized an MLP architecture with Dropout layers to prevent overfitting; tuned classification thresholds to maximize **F1-Score** for imbalanced risk classes.
 
 ---
 
-## **How to View My Work**
+## 🛠️ Technical Toolkit
+* **Languages:** Python (Pandas, NumPy, Scikit-Learn), SQL
+* **Deep Learning:** PyTorch, TensorFlow, Keras, YOLOv8
+* **Specialized Libraries:** OpenCV (Video/Image), Matplotlib/Seaborn (Visualization), Ultralytics
+* **Concepts:** CNNs, RNNs/GRUs, Attention Mechanisms, Feature Engineering, Hyperparameter Optimization
 
-1. **Notebooks:** You can click on any `.ipynb` file to see the code and results rendered directly in GitHub.  
-2. **PDF Reports:** Some folders contain formal PDF summaries of the findings for a non-technical overview.  
-3. **Data:** Due to file size limits, large datasets are linked in the project-specific READMEs.
+---
+
+## 🚀 How to Use This Repo
+1. **Explore the Notebooks:** Each `.ipynb` file contains the full end-to-end pipeline from data cleaning to evaluation.
+2. **Requirements:** To replicate the environments, ensure you have the libraries installed:
+   ```bash
+   pip install torch torchvision ultralytics tensorflow pandas numpy scikit-learn opencv-python seaborn
