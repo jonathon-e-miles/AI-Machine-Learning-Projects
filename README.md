@@ -1,48 +1,58 @@
-# AI & Data Science Portfolio: Technical Capstones
-**Jonathon Miles** | *Purdue University Post-Graduate Program*
+# AI and Machine Learning Portfolio
+### End-to-End Implementations in Computer Vision, Predictive Modeling, and Behavioral Analytics
 
-This repository contains a curated collection of AI and Machine Learning projects, ranging from safety-critical Computer Vision to high-dimensional marketing analytics. These projects demonstrate a "full-stack" approach to AI: data engineering, model architecture, training, and deployment.
-
----
-
-## 📂 Project Directory
-
-### 🏎️ 1. Computer Vision & Safety
-**Project:** [Automated Driving Object Detection](./Automated_Driving_IDs.ipynb)
-* **Goal:** Detect and classify 5 vehicle classes in real-world driving environments.
-* **Tech:** YOLOv8 (Ultralytics), PyTorch, Transfer Learning.
-* **Results:** Achieved **0.431 mAP50**; implemented custom hyperparameter tuning to overcome significant class imbalance (specifically the "Bus" class).
-
-### 🎬 2. Sequential Modeling & Motion
-**Project:** [Hybrid Video Classification](./Video_Classification.ipynb)
-* **Goal:** Classify temporal actions in video sequences using a custom deep learning pipeline.
-* **Tech:** PyTorch, InceptionV3 (Feature Extraction), Bidirectional GRU, Multi-head Attention, OpenCV.
-* **Results:** Developed a robust sampling pipeline for high-dimensional video data, utilizing attention mechanisms to focus on key frames for classification accuracy.
-
-### 💳 3. Unsupervised Learning & Marketing Strategy
-**Project:** [Strategic Customer Segmentation](./Credit_Card_Strategic_Marketing.ipynb)
-* **Goal:** Group 8,900+ credit card users into behavioral personas to drive targeted marketing spend.
-* **Tech:** Scikit-Learn, K-Means Clustering, PCA (Dimensionality Reduction), Seaborn.
-* **Results:** Successfully reduced feature dimensionality through PCA and utilized the "Elbow Method" to identify 4 distinct customer personas for high-ROI campaign targeting.
-
-### 🏠 4. Deep Learning & Financial Risk
-**Project:** [Home Lending Neural Network](./Home_Lending_Data_Analysis.ipynb)
-* **Goal:** Predict loan default risk using large-scale tabular data (300,000+ records).
-* **Tech:** TensorFlow, Keras, MLP (Multi-Layer Perceptron), AdamW.
-* **Results:** Optimized an MLP architecture with Dropout layers to prevent overfitting; tuned classification thresholds to maximize **F1-Score** for imbalanced risk classes.
+This repository serves as a centralized portfolio for machine learning projects focused on operational efficiency and marketing intelligence. Each project is designed to solve a specific business challenge, ranging from automated brand auditing to high-precision audience segmentation.
 
 ---
 
-## 🛠️ Technical Toolkit
-* **Languages:** Python (Pandas, NumPy, Scikit-Learn), SQL
-* **Deep Learning:** PyTorch, TensorFlow, Keras, YOLOv8
-* **Specialized Libraries:** OpenCV (Video/Image), Matplotlib/Seaborn (Visualization), Ultralytics
-* **Concepts:** CNNs, RNNs/GRUs, Attention Mechanisms, Feature Engineering, Hyperparameter Optimization
+## Featured Projects
+
+### 1. Automated Brand & Quality Auditor
+**Objective:** Replace manual asset review with an automated computer vision pipeline to ensure brand consistency and regulatory compliance.
+
+*   **Technical Stack:** Python, YOLOv8, PyTorch, OpenCV.
+*   **Implementation:** Engineered a custom object-detection model trained to identify brand assets and logos within large-scale media libraries (1,000+ files).
+*   **Operational Impact:** Achieved 100% verification accuracy prior to publication, significantly reducing the manual overhead for creative and compliance teams.
+
+### 2. Predictive Audience Segmentation & Behavioral Mapping
+**Objective:** Analyze complex customer data to move beyond demographic targeting into behavioral-based marketing strategies.
+
+*   **Technical Stack:** Python, Scikit-Learn (K-Means, PCA), Pandas, Matplotlib.
+*   **Implementation:** Applied Principal Component Analysis (PCA) for dimensionality reduction on a dataset of 8,900+ customer profiles, followed by K-Means clustering to define high-value personas.
+*   **Operational Impact:** Identified four distinct behavioral segments, allowing for the deployment of automated, personalized multi-channel marketing campaigns.
+
+### 3. Lead Propensity & Income Classification Model
+**Objective:** Prioritize sales and marketing outreach by predicting lead quality based on demographic and professional attributes.
+
+*   **Technical Stack:** Python, Scikit-Learn, NumPy, Seaborn.
+*   **Implementation:** Developed a supervised classification model to categorize leads into high and low propensity tiers. Evaluated performance using precision-recall metrics to minimize false positives in sales funnels.
+*   **Operational Impact:** Provides a data-driven framework for optimizing resource allocation in sales-focused marketing environments.
 
 ---
 
-## 🚀 How to Use This Repo
-1. **Explore the Notebooks:** Each `.ipynb` file contains the full end-to-end pipeline from data cleaning to evaluation.
-2. **Requirements:** To replicate the environments, ensure you have the libraries installed:
-   ```bash
-   pip install torch torchvision ultralytics tensorflow pandas numpy scikit-learn opencv-python seaborn
+## Technical Skills and Environment
+
+### Machine Learning & Data Science
+*   **Supervised Learning:** Classification, Regression, Lead Scoring.
+*   **Unsupervised Learning:** K-Means Clustering, PCA, Anomaly Detection.
+*   **Deep Learning:** Computer Vision (YOLOv8), Neural Networks.
+*   **Data Engineering:** ETL Pipelines, Data Cleaning, Feature Engineering.
+
+### Tools and Frameworks
+*   **Languages:** Python (Pandas, NumPy, Scikit-Learn, PyTorch).
+*   **Database:** SQL for data extraction and manipulation.
+*   **Visualization:** Matplotlib, Seaborn, Looker Studio.
+*   **Deployment & Ops:** GitHub Actions, Technical Documentation.
+
+---
+
+## Repository Structure
+To maintain reproducibility, each project is organized into dedicated directories containing:
+*   **Notebooks:** Documented exploratory data analysis (EDA) and model training.
+*   **Data:** Anonymized sample datasets (where applicable).
+*   **Requirements:** Dependency lists for local environment setup.
+
+---
+
+## Contact and Collaboration
+[LinkedIn](https://linkedin.com/in/jonathon-e-miles) | [Email](mailto:jonathon.e.miles@gmail.com)
